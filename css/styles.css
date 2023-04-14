@@ -37,8 +37,8 @@
 }
 
 .gif {
-  height: 100px;
-  width: 100px;
+  height: 3rem;
+  width: 3rem;
   margin-top: 15px;
 }
 
@@ -91,9 +91,9 @@ a.nav-link:hover,
 
 .nav-item,
 .navbar-toggler-text {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Inter", sans-serif;
   /* font-weight: bolder; */
-  letter-spacing: 1.2px;
+  letter-spacing: 0.9px;
 }
 
 img {
@@ -124,6 +124,11 @@ footer {
   width: -webkit-fill-available;
   padding: 20px;
 }
+
+/* .project-desc.btn {
+  border: none;
+  padding-left: 0;
+} */
 
 @media screen and (max-width: 480px) {
   .navbar {

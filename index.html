@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" href="css/styles.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Poppins:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Poppins:wght@300&family=Inter:wght@300&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -28,7 +28,7 @@
         src="img/logo.jpg"
         alt="Kaylux logo"
       />
-      <object class="gif" data="img/Infinity-2.1s-217px.svg"></object>
+      <object class="gif" data="img/Earth-2s-84px.svg"></object>
     </div>
 
     <div id="homepage">
@@ -95,6 +95,8 @@
 
       <!-- Main body -->
 
+      <!-- implement text on home page and design about page -->
+
       <main id="main">
         <div
           id="carouselExampleSlidesOnly"
@@ -104,22 +106,59 @@
           <div class="carousel-inner">
             <div class="carousel-item active data-bs-interval=3000 bg-body">
               <img src="img/interior-design1.jpg" alt="..." />
+              <div class="carousel-caption d-block">
+                <h5 class="project-desc">LABADI BEACH SET, SAKUMONO</h5>
+                <button
+                  type="button"
+                  style="border: none; padding-left: 0; cursor: pointer"
+                  class="btn btn-outline-light"
+                >
+                  VIEW PROJECT →
+                </button>
+              </div>
             </div>
             <div class="carousel-item data-bs-interval=3000">
-              <img src="img/interior-design4.jpg" alt="..." />
+              <img
+                src="img/interior-design4.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-block">
+                <h5 class="project-desc">LABADI BEACH SET, SAKUMONO</h5>
+                <button
+                  type="button"
+                  style="border: none; padding-left: 0; cursor: pointer"
+                  class="btn btn-outline-light"
+                >
+                  VIEW PROJECT →
+                </button>
+              </div>
             </div>
             <div class="carousel-item data-bs-interval=3000">
               <img src="img/interior-design3.jpg" alt="..." />
+              <div class="carousel-caption d-block">
+                <h5 class="project-desc">LABADI BEACH SET, SAKUMONO</h5>
+                <button
+                  type="button"
+                  style="border: none; padding-left: 0; cursor: pointer"
+                  class="btn btn-outline-light"
+                >
+                  VIEW PROJECT →
+                </button>
+              </div>
             </div>
 
             <div class="carousel-item">
               <img src="img/interior-design5.jpg" alt="..." />
               <div class="carousel-caption d-block">
-                <h5>Lorem ipsum dolor sit</h5>
-                <p>
-                  Lorem ipsum dolor sit amet, Hendrerit gravida rutrum quisque
-                  non.
-                </p>
+                <h5 class="project-desc">LABADI BEACH SET, SAKUMONO</h5>
+                <button
+                  type="button"
+                  style="border: none; padding-left: 0; cursor: pointer"
+                  class="btn btn-outline-light"
+                >
+                  VIEW PROJECT →
+                </button>
               </div>
             </div>
           </div>
@@ -225,7 +264,7 @@
           // revert default settings after load
           revert();
           loading.classList.add("hide");
-        }, 2500);
+        }, 2700);
       });
 
       menuButton.addEventListener("click", function () {
