@@ -76,10 +76,12 @@
                 <a class="nav-link" aria-current="page" href="#">PROJECTS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">STUDIO</a>
+                <a class="nav-link" href="#">STUDIO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">SERVICES</a>
+                <a class="nav-link" aria-current="page" href="about.html"
+                  >SERVICES</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="contact.html"
@@ -122,7 +124,7 @@
     />
 
     <section id="services" class="container-fluid">
-      <div class="row offers">
+      <div class="row offers fade-in">
         <div class="col-lg-4">
           <h6>REAL ESTATE</h6>
         </div>
@@ -135,14 +137,14 @@
           </p>
         </div>
       </div>
-      <div class="row offers">
+      <div class="row offers fade-in">
         <div class="col-lg-4">
           <h6>CONSTRUCTION</h6>
         </div>
         <div class="col-lg-8 service-desc">
           <p>
             Klux Inc Company offers a range of services, including general
-            construction: supervision, inspection designing and building. We
+            construction: supervision, inspection, designing and building. We
             also provide cost estimates, timelines, and constructability
             analysis. In addition, we provide a special service called the
             <em><strong> K-Joint Unit</strong></em> where we help you realise
@@ -154,7 +156,7 @@
           </p>
         </div>
       </div>
-      <div class="row offers">
+      <div class="row offers fade-in">
         <div class="col-lg-4">
           <h6>ARCHITECTURE</h6>
         </div>
@@ -171,12 +173,15 @@
           </p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-6 col-md-6">
-          <h6>INTERIOR DESIGN</h6>
-          <p class="service-desc">
+    </section>
+
+    <section class="container-fluid">
+      <div class="row design-block">
+        <div class="col-lg-6 col-md-6 interior-design">
+          <!-- <h6>INTERIOR DESIGN</h6> -->
+          <p>
             We boast our top notch expertise in interior design and specialising
-            in creative thinking and high quality design and furnishing. Our
+            in creative thinking, high quality design and furnishing. Our
             strength lies in our passion for creativity, bringing unique
             elements to both modern and traditional designs and adding that
             magic touch to environments that are ergonomic and welcoming. In
@@ -186,8 +191,8 @@
             preference.
           </p>
         </div>
-        <div class="col-lg-6 col-md-6">
-          <img src="img/hallway.jpg" class="img-fluid" alt="" />
+        <div class="col-lg-6 col-md-6 img-container">
+          <img src="img/hallway.jpg" class="img-fluid design-img" alt="" />
         </div>
       </div>
     </section>
@@ -261,6 +266,32 @@
         document.querySelector(".offcanvas").style.backgroundColor = "#9F8772";
         //   document.querySelector(".offcanvas").style.color = "white";
       });
+
+      // Fade in animation
+
+      function checkFadeIn() {
+        const fadeInElements = document.querySelectorAll(".fade-in");
+        for (let i = 0; i < fadeInElements.length; i++) {
+          let element = fadeInElements[i];
+          if (isElementInViewport(element)) {
+            element.classList.add("fade-in-visible");
+          }
+        }
+      }
+
+      function isElementInViewport(element) {
+        let rect = element.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      window.addEventListener("scroll", checkFadeIn);
     </script>
   </body>
 </html>
