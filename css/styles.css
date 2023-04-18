@@ -78,10 +78,9 @@ main {
 }
 
 a.nav-link {
-  font-size: 17px;
+  font-size: 15px;
   margin-left: 5px;
-  font-family: "Bodoni Moda", serif;
-  font-style: italic;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 /* a.nav-link:hover {
@@ -96,7 +95,7 @@ a.nav-link,
 a.navbar-close,
 a.nav-link:hover,
 .navbar-toggler:hover {
-  color: black;
+  color: white;
 }
 
 .carousel-caption {
@@ -160,6 +159,14 @@ footer {
 
   a.nav-link {
     font-size: 3rem;
+    font-style: italic;
+  }
+
+  a.nav-link,
+  a.navbar-close,
+  a.nav-link:hover,
+  .navbar-toggler:hover {
+    color: black;
   }
 }
 

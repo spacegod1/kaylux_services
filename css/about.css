@@ -214,9 +214,9 @@ footer {
   }
 
   .info--container > p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     padding-left: 0;
-    padding-top: 50px;
+    padding-top: 30px;
     line-height: 2.5;
   }
 
@@ -278,7 +278,7 @@ footer {
   }
 
   .hero {
-    height: 530px;
+    height: 600px;
     padding: 110px 20px 0;
     text-align: center;
   }
@@ -297,6 +297,10 @@ footer {
     display: inline-block;
   }
 
+  /* .info--container {
+    padding-top: 0;
+  } */
+
   .interior-concept {
     height: 350px;
   }
@@ -311,6 +315,7 @@ footer {
     font-family: "Inter", sans-serif;
     font-weight: 200;
     font-size: 16px;
+    padding-left: 0;
   }
 
   .design-img {
