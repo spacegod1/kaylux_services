@@ -29,6 +29,7 @@
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   display: flex;
+  background-color: #3e4246;
 }
 
 .loading-image {
@@ -40,6 +41,12 @@
   height: 3rem;
   width: 3rem;
   margin-top: 15px;
+}
+
+.logo {
+  height: rem;
+  width: 7rem;
+  pointer-events: none;
 }
 
 .offcanvas-header {
@@ -64,15 +71,22 @@ main {
 
 .navbar-toggler {
   border: none;
-  font-size: 20px;
+  font-size: 14px;
   text-decoration: none;
   color: white;
+  font-weight: bolder;
 }
 
 a.nav-link {
   font-size: 17px;
   margin-left: 5px;
+  font-family: "Bodoni Moda", serif;
+  font-style: italic;
 }
+
+/* a.nav-link:hover {
+ 
+} */
 
 a.navbar-close {
   text-decoration: none;
@@ -82,7 +96,7 @@ a.nav-link,
 a.navbar-close,
 a.nav-link:hover,
 .navbar-toggler:hover {
-  color: white;
+  color: black;
 }
 
 .carousel-caption {
@@ -94,6 +108,10 @@ a.nav-link:hover,
   font-family: "Inter", sans-serif;
   /* font-weight: bolder; */
   letter-spacing: 0.9px;
+}
+
+.navbar-toggler-text {
+  margin-left: 3rem;
 }
 
 img {
@@ -138,6 +156,10 @@ footer {
   .loading-image {
     width: 300px;
     height: 300px;
+  }
+
+  a.nav-link {
+    font-size: 3rem;
   }
 }
 

@@ -6,7 +6,7 @@
 
 #services {
   width: 100%;
-  height: 650px;
+  height: 45rem;
   padding: 4.5rem 9rem 0;
 }
 
@@ -163,6 +163,101 @@ footer {
   padding: 20px;
 }
 
+@media screen and (max-width: 1024px) {
+  #services {
+    padding: 4.5rem 4rem 0;
+    height: 55rem;
+  }
+
+  .hero {
+    padding-left: 4.4rem;
+  }
+
+  .hero--info {
+    font-size: 3.4rem;
+  }
+
+  .info--container > p {
+    font-size: 0.95rem;
+  }
+
+  .interior-concept {
+    height: 400px;
+  }
+
+  .service-desc > p {
+    font-size: 15px;
+  }
+
+  .interior-design > p {
+    line-height: 1.6;
+    padding-left: 15px;
+  }
+
+  .design-img {
+    height: 840px;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  #services {
+    padding: 4.5rem 4rem 0;
+    height: 60rem;
+  }
+
+  .hero--info {
+    font-size: 2.4rem;
+  }
+
+  .info--container {
+    display: inline-block;
+  }
+
+  .info--container > p {
+    font-size: 0.9rem;
+    padding-left: 0;
+    padding-top: 50px;
+    line-height: 2.5;
+  }
+
+  .hero {
+    padding: 13rem 3rem 0;
+    height: 700px;
+    text-align: center;
+  }
+
+  .hero > .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .interior-concept {
+    height: 350px;
+  }
+
+  .service-desc > p {
+    padding-left: 0;
+  }
+
+  .design-block {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .interior-design {
+    padding: 5rem 2rem;
+  }
+
+  .interior-design > p {
+    line-height: 1.7;
+    padding-left: 40px;
+  }
+
+  .design-img {
+    height: 400px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .navbar {
     padding: 5% 0;
@@ -183,7 +278,7 @@ footer {
   }
 
   .hero {
-    height: 560px;
+    height: 530px;
     padding: 110px 20px 0;
     text-align: center;
   }
@@ -203,7 +298,7 @@ footer {
   }
 
   .interior-concept {
-    height: 300px;
+    height: 350px;
   }
 
   .interior-design {
