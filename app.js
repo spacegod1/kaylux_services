@@ -2,7 +2,7 @@ const menuButton = document.querySelector(".navbar-toggler-text");
 const closeButton = document.querySelector(".navbar-close");
 
 menuButton.addEventListener("click", function () {
-  document.querySelector(".offcanvas").style.backgroundColor = "#9F8772";
+  document.querySelector(".offcanvas").style.backgroundColor = "#f9a133";
   document.getElementById("map").classList.add("hide");
   //   document.querySelector(".offcanvas").style.color = "white";
 });

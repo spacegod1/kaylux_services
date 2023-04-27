@@ -44,7 +44,7 @@
 }
 
 .logo {
-  height: rem;
+  height: 7rem;
   width: 7rem;
   pointer-events: none;
 }
@@ -57,10 +57,11 @@
 }
 
 .topbar {
-  margin: 50px;
+  margin: 10px 30px 0;
   position: absolute;
   z-index: 1;
   width: 95%;
+  height: 125px;
 }
 
 main {
@@ -120,9 +121,9 @@ img {
 }
 
 small {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   letter-spacing: 0.2px;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 /* .logo {
@@ -148,8 +149,8 @@ footer {
 } */
 
 @media screen and (max-width: 480px) {
-  .navbar {
-    margin: 5% 0;
+  .topbar {
+    margin: 10px 0 0;
   }
 
   .loading-image {

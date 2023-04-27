@@ -10,6 +10,12 @@
   padding: 4.5rem 9rem 0;
 }
 
+.logo {
+  height: 7rem;
+  width: 7rem;
+  pointer-events: none;
+}
+
 .offcanvas-header {
   justify-content: flex-end;
   margin-top: 20px;
@@ -18,11 +24,12 @@
 }
 
 .topbar {
-  padding: 50px 15px 30px;
+  padding-right: 8px;
   position: fixed;
   /* z-index: 1; */
   width: 100%;
   background-color: white;
+  height: 125px;
 }
 
 .navbar-toggler {
@@ -35,6 +42,8 @@
 a.nav-link {
   font-size: 17px;
   margin-left: 5px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
 }
 
 a.navbar-close {
@@ -50,9 +59,9 @@ a.nav-link:hover,
 
 .nav-item,
 .navbar-toggler-text {
-  font-family: "Cormorant Garamond", serif;
-  /* font-weight: bolder; */
-  letter-spacing: 1.2px;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.9px;
+  font-weight: bolder;
 }
 
 /* Body */
@@ -259,10 +268,6 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-  .navbar {
-    padding: 5% 0;
-  }
-
   /* .topbar {
       width: 95%;
     } */
@@ -270,7 +275,13 @@ footer {
   a.navbar-close,
   a.nav-link:hover,
   .navbar-toggler:hover {
-    color: white;
+    color: black;
+  }
+
+  a.nav-link {
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 400;
   }
 
   a.navbar-toggler {
@@ -279,7 +290,7 @@ footer {
 
   .hero {
     height: 600px;
-    padding: 110px 20px 0;
+    padding: 160px 20px 0;
     text-align: center;
   }
 
