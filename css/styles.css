@@ -101,6 +101,7 @@ a.nav-link:hover,
 
 .carousel-caption {
   text-align: left;
+  padding-bottom: 7rem;
 }
 
 .nav-item,

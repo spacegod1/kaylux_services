@@ -86,6 +86,7 @@ a.nav-link {
 .navbar-toggler-text {
   font-family: "Inter", sans-serif;
   letter-spacing: 0.9px;
+  font-weight: bold;
 }
 
 small {
