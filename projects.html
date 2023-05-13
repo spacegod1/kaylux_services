@@ -12,7 +12,7 @@
       crossorigin=""
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Poppins:wght@300&family=Roboto:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Space+Grotesk:wght@400;700&family=Rajdhani:wght@500&family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
 
@@ -30,8 +30,8 @@
     <!-- Navbar -->
     <nav class="navbar topbar navbar-expand-md">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"
-          >KAYLUX
+        <a class="navbar-brand" href="index.html">
+          <object data="img/LOGO 2.svg" class="logo"></object>
           <!-- <img class="logo" src="img/logo.jpg" alt="klux-logo" /> -->
         </a>
         <a
@@ -69,13 +69,17 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">PROJECTS</a>
+                <a class="nav-link" aria-current="page" href="projects.html"
+                  >PROJECTS</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">STUDIO</a>
+                <a class="nav-link" href="#">STUDIO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">SERVICES</a>
+                <a class="nav-link" aria-current="page" href="services.html"
+                  >SERVICES</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="contact.html"
@@ -88,10 +92,24 @@
       </div>
     </nav>
 
+    <!-- Main Body -->
+
+    <section id="features" class="container-fluid">
+      <!-- <h2>FEATURED PROJECTS</h2> -->
+      <div>
+        <img src="img/project1.jpg" alt="" class="img-fluid project-img" />
+        <p class="location">LODESTAR RESIDENCE, OSU</p>
+      </div>
+      <div class="ongoing-project">
+        <video src="assets/ongoing-project.MP4" controls></video>
+        <p class="location">THE MANSION, EAST LEGON</p>
+      </div>
+    </section>
+
     <!-- Footer -->
 
     <footer class="d-flex flex-wrap justify-content-between align-items-center">
-      <small class="col-md-4 mb-0 text-muted">© 2022 Kaylux Designs</small>
+      <small class="col-md-4 mb-0 text-muted">© 2023 Kaylux Designs</small>
 
       <div class="nav col-md-4 justify-content-end">
         <a href="#">
@@ -154,7 +172,7 @@
       const menuButton = document.querySelector(".navbar-toggler-text");
 
       menuButton.addEventListener("click", function () {
-        document.querySelector(".offcanvas").style.backgroundColor = "#9F8772";
+        document.querySelector(".offcanvas").style.backgroundColor = "#f9a133";
         //   document.querySelector(".offcanvas").style.color = "white";
       });
     </script>

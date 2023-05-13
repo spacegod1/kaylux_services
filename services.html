@@ -4,15 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services</title>
+    <title>Studio</title>
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
       integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
       crossorigin=""
     />
+
+    <!-- Font files -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Poppins:wght@300&family=Roboto:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Rajdhani:wght@500&family=Nanum+Myeongjo&family=Space+Grotesk:wght@300;400&display=swap"
       rel="stylesheet"
     />
 
@@ -30,9 +34,8 @@
     <!-- Navbar -->
     <nav class="navbar topbar navbar-expand-md">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"
-          >KAYLUX
-          <!-- <img class="logo" src="img/logo.jpg" alt="klux-logo" /> -->
+        <a class="navbar-brand" href="index.html">
+          <object data="img/LOGO 2.svg" class="logo"></object>
         </a>
         <a
           class="navbar-toggler"
@@ -69,13 +72,15 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">PROJECTS</a>
+                <a class="nav-link" aria-current="page" href="projects.html"
+                  >PROJECTS</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">STUDIO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="about.html"
+                <a class="nav-link" aria-current="page" href="services.html"
                   >SERVICES</a
                 >
               </li>
@@ -90,10 +95,113 @@
       </div>
     </nav>
 
+    <section class="container-fluid hero">
+      <div class="row">
+        <div class="col-lg-6 col-md col-sm">
+          <h2 class="hero--info">
+            Crafting spaces that inspire and reflect your style, from vision to
+            reality.
+          </h2>
+        </div>
+        <div class="col-lg-6 col-md col-sm">
+          <div class="info--container">
+            <p>
+              At Klux, we look at finding answers to typical issues in the
+              constantly evolving real estate, architecture and interior design
+              industries which has never been more crucial than it is right now.
+              We approah every project uniquely, with a sense of creativity and
+              function to suit our clients' ideas into a production ready design
+              and then manage it through to a successful handover.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <img
+      src="img/living_room_concept.jpg"
+      class="img-fluid interior-concept"
+      alt=""
+    />
+
+    <section id="services" class="container-fluid">
+      <div class="row offers fade-in">
+        <div class="col-lg-4 col-md-3">
+          <h6>REAL ESTATE</h6>
+        </div>
+        <div class="col-lg-8 col-md-9 service-desc">
+          <p>
+            Our real estate activities at the Klux Inc. company include a
+            variety of services relating to the provision of property, that is
+            buying, selling and renting of commercial and residential properties
+            or land handled by our team of professional realtors.
+          </p>
+        </div>
+      </div>
+      <div class="row offers fade-in">
+        <div class="col-lg-4 col-md-3">
+          <h6>CONSTRUCTION</h6>
+        </div>
+        <div class="col-lg-8 col-md-9 service-desc">
+          <p>
+            Klux Inc Company offers a range of services, including general
+            construction: supervision, inspection, designing and building. We
+            also provide cost estimates, timelines, and constructability
+            analysis. In addition, we provide a special service called the
+            <em><strong> K-Joint Unit</strong></em> where we materialise your
+            dream of having property built on land you own, finishing your
+            building or renovating an existing building. In the partnership with
+            Klux Inc Company, you will leave the task of developing the property
+            in good and able hands in exchange for a fair percentage yet to be
+            discussed.
+          </p>
+        </div>
+      </div>
+      <div class="row offers fade-in">
+        <div class="col-lg-4 col-md-3">
+          <h6>ARCHITECTURE</h6>
+        </div>
+        <div class="col-lg-8 col-md-9 service-desc">
+          <p>
+            Our architects at Klux Inc provide the best support for clients by
+            determining their housing, office or space needs while efficiently
+            utilising the client set budget. We calculate the client office,
+            housing or space furniture needs in millimetres, applying their
+            preferences in a 3D environment to show the structure of their
+            office, housing or space before production. At Klux Inc we believe
+            flawless design is the real beauty of a construction. We are skilled
+            at what we do and we can perfect works.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid">
+      <div class="row design-block">
+        <div class="col-lg-6 col-md-6 interior-design">
+          <!-- <h6>INTERIOR DESIGN</h6> -->
+          <p>
+            We boast our top notch expertise in interior design and specialising
+            in creative thinking, high quality design and furnishing. Our
+            strength lies in our passion for creativity, bringing unique
+            elements to both modern and traditional designs and adding that
+            magic touch to environments that are ergonomic and welcoming. In
+            collaborative approach with clients, we apply design principles,
+            space analysis and knowledge integration in order to produce an
+            interior space which is attractive, productive and reflects client's
+            preference.
+          </p>
+        </div>
+        <div class="col-lg-6 col-md-6 img-container">
+          <img src="img/hallway.jpg" class="img-fluid design-img" alt="" />
+        </div>
+      </div>
+    </section>
+
     <!-- Footer -->
 
     <footer class="d-flex flex-wrap justify-content-between align-items-center">
-      <small class="col-md-4 mb-0 text-muted">© 2022 Kaylux Designs</small>
+      <small class="col-md-4 mb-0 text-muted">© 2023 Kaylux Designs</small>
 
       <div class="nav col-md-4 justify-content-end">
         <a href="#">
@@ -156,9 +264,35 @@
       const menuButton = document.querySelector(".navbar-toggler-text");
 
       menuButton.addEventListener("click", function () {
-        document.querySelector(".offcanvas").style.backgroundColor = "#9F8772";
+        document.querySelector(".offcanvas").style.backgroundColor = "#f9a133";
         //   document.querySelector(".offcanvas").style.color = "white";
       });
+
+      // Fade in animation
+
+      function checkFadeIn() {
+        const fadeInElements = document.querySelectorAll(".fade-in");
+        for (let i = 0; i < fadeInElements.length; i++) {
+          let element = fadeInElements[i];
+          if (isElementInViewport(element)) {
+            element.classList.add("fade-in-visible");
+          }
+        }
+      }
+
+      function isElementInViewport(element) {
+        let rect = element.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      window.addEventListener("scroll", checkFadeIn);
     </script>
   </body>
 </html>

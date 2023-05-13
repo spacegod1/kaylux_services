@@ -1,33 +1,14 @@
-#map {
-  width: 100%;
-  height: 450px;
-  box-sizing: border-box;
-  padding: 10px;
-}
-
-#contact {
-  text-align: center;
-  padding: 5% 10%;
-  font-family: "Roboto", sans-serif;
-}
-
-#map-container {
-  padding: 12rem 0 0;
-  position: relative;
-  z-index: -1;
-  margin: 0 1.4rem;
-  border-radius: 10px;
-  /* background-color: #abb8c3; */
-}
-
-.hide {
-  visibility: hidden;
-}
-
 * {
   margin: 0;
   padding: 0;
   /* box-sizing: initial; */
+}
+
+#contact {
+  background-color: #333;
+  height: 100vh;
+  /* position: relative; */
+  width: 100%;
 }
 
 .offcanvas-header {
@@ -42,14 +23,24 @@
   position: fixed;
   /* z-index: 1; */
   width: 100%;
+  background-color: #333;
   height: 125px;
-  background-color: #f3efe0;
 }
 
 .logo {
   height: 7rem;
   width: 7rem;
   pointer-events: none;
+}
+
+.background-logo {
+  position: absolute;
+  right: 0;
+  bottom: 3.5rem;
+  height: 30rem;
+  width: 35rem;
+  opacity: 0.18;
+  /* z-index: -1; */
 }
 
 .navbar-toggler {
@@ -62,6 +53,8 @@
 a.nav-link {
   font-size: 17px;
   margin-left: 5px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
 }
 
 a.navbar-close {
@@ -72,32 +65,81 @@ a.nav-link,
 a.navbar-close,
 a.nav-link:hover,
 .navbar-toggler:hover {
-  color: black;
-}
-
-a.nav-link {
-  font-size: 17px;
-  margin-left: 5px;
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 400;
+  color: white;
 }
 
 .nav-item,
 .navbar-toggler-text {
   font-family: "Inter", sans-serif;
+  font-weight: bolder;
   letter-spacing: 0.9px;
-  font-weight: bold;
 }
 
+/* Main Body */
+
+.contact-body {
+  padding: 15rem 15rem 0 20rem;
+  color: white;
+}
+
+.info--container {
+  padding-left: 4.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 17px;
+}
+
+label {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: hsla(0, 0%, 100%, 0.2);
+}
+
+.email--address {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 28px;
+}
+
+.my-input {
+  background-color: transparent;
+  border-radius: 0% !important;
+  font-size: 14px;
+  color: white !important;
+  margin: 0 0 15px;
+  border-color: hsla(0, 0%, 100%, 0.2);
+}
+
+.my-input:focus {
+  background-color: #333;
+  border-color: #f3efe0;
+  box-shadow: none !important;
+}
+
+.my-input:hover {
+  border-color: #f3efe0;
+}
+
+button {
+  padding: 5px 15px;
+  font-size: 11px;
+  border: none;
+  margin: 10px 0 15px;
+}
+
+/* footer */
 small {
+  font-family: "Rajdhani", sans-serif;
   letter-spacing: 0.2px;
   font-size: 13px;
 }
-
-/* .logo {
-  width: 70px;
-  height: 50px;
-} */
 
 a svg {
   margin-left: 3.8px;
@@ -111,91 +153,45 @@ footer {
   padding: 20px;
 }
 
-.contact-title {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.contact-body {
-  margin-top: 45px;
-}
-
-/* .contact-ad {
-  width: 100%;
-  height: 25px;
-  background-color: #9f8772;
-  color: black;
-  padding-right: 5px;
-} */
-
-hr {
-  width: 30%;
-  border: 1px solid #263159;
-  display: inline-flex;
-  align-items: center;
-  margin: 6px;
-  background-color: #263159;
-}
-
-h5 {
-  display: inline;
-  align-items: center;
-  margin: 0 4px;
-  font-weight: bold;
-}
-
-img,
-h6,
-p {
-  margin-top: 30px;
-  font-weight: bold;
-}
-
-.row img {
-  height: 85px;
-  width: 85px;
-  margin-top: 15px;
-}
-
-.address {
-  padding-top: 30px;
-  background-color: #474e68;
-  color: white;
-  height: 300px;
-}
-
-.email {
-  padding-top: 30px;
-  background-color: #9f8772;
-  color: white;
-  height: 300px;
-  margin-bottom: 60px;
-}
-
-.phone {
-  height: 300px;
-  padding-top: 30px;
+@media only screen and (max-width: 1024px) {
+  .contact-body {
+    padding: 20rem 5rem 0;
+    color: white;
+  }
 }
 
 @media screen and (max-width: 480px) {
+  #contact {
+    height: 55rem;
+  }
+
+  .contact-body {
+    padding: 10rem 0 0;
+  }
+
+  .info--container {
+    padding-left: 10px;
+    font-size: 15px;
+  }
+
+  .background-logo {
+    display: none;
+  }
+
+  a.nav-link,
+  a.navbar-close,
+  a.nav-link:hover {
+    color: black;
+  }
+
   a.nav-link {
     font-size: 3rem;
     font-style: italic;
     font-weight: 400;
   }
 
-  a.nav-link,
-  a.navbar-close,
-  a.nav-link:hover,
-  .navbar-toggler:hover {
-    color: black;
-  }
-
   a.navbar-toggler {
-    font-size: 19px;
-  }
-
-  hr {
-    width: 0%;
+    font-size: 15px;
+    color: white;
   }
 }
